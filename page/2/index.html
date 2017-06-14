@@ -1,0 +1,1110 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="hURnC-1VtFyi-v7OYQhy-5eOj-XZW3BAIs6iqzQcQj8" />
+
+
+
+
+
+
+
+
+
+
+  <link href="/blog/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+	
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  
+
+
+
+<link href="/blog/vendors/font-awesome/css/font-awesome.min.css?v=4.5.0" rel="stylesheet" type="text/css" />
+
+<link href="/blog/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="jovey,Nodejs,react,redux,coffeescript,前端,js,jquery,javascript,html5,开发者,程序猿,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,html,css,css3,用户体验,Hexo,next..." />
+
+
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="Jovey's Notes" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.0.0" />
+
+
+
+
+
+
+<meta name="description" content="Front End | Nodejs | React | Redux ...">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jovey's Notes">
+<meta property="og:url" content="http://jovey-zheng.github.io/blog/page/2/index.html">
+<meta property="og:site_name" content="Jovey's Notes">
+<meta property="og:description" content="Front End | Nodejs | React | Redux ...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jovey's Notes">
+<meta name="twitter:description" content="Front End | Nodejs | React | Redux ...">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: '[object Object]',
+    fancybox: true,
+    motion: true
+  };
+</script>
+
+  <title> Jovey's Notes </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-67800719-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?7a046e8db6a48f2ab46b7812ba612789";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/blog/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Jovey's Notes</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">心有猛虎 细嗅蔷薇</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/blog/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+      
+        <li class="menu-item menu-item-search">
+          <a href="#" class="st-search-show-outputs">
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'Eq6Hisgzq2b_MSGwmySM','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+
+    
+
+    
+    
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/blog/2015/12/24/article-16/" itemprop="url">
+                  20 个交互非常棒的按钮代码
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-24T09:57:22+08:00" content="2015-12-24">
+              2015-12-24
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/好文分享/" itemprop="url" rel="index">
+                    <span itemprop="name">好文分享</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2015/12/24/article-16/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/24/article-16/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/blog/2015/12/24/article-16/"class="leancloud_visitors"  data-flag-title="20 个交互非常棒的按钮代码">
+                &nbsp; | &nbsp;
+                <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数</span>
+               <span class="leancloud-visitors-count"></span>
+            </span>
+        
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>你能想象网页中没有按钮吗？我打赌你不会。在网页中，拥有按钮并不奇怪，这些看似很小、主要以矩形表现（如导航栏，版权信息）的东西，其实是网页 UI 中基础之一。它们不仅使链接看起来更有分量、吸引人和鲜明，而且他们还能提高跳转率和用户体验，使之更方便和直观。这些 CTA （Call-to-action：行为召唤）能帮你获得更多的潜在客户和促进业务的扩展。</p>
+<p><img src="http://www.noupe.com/wp-content/uploads/2015/10/codesnippets-buttons-teaser_EN.jpg" alt="HOST"></p>
+<p>按钮的开发需要注意它的形状、颜色、空间、排版和前景，这些都很重要。前四个主要是依赖于网页的主题，而最后一个则是取决于你需要达成的目标。例如，你可以在用户点击后，等待的时间里在按钮上加入转轮点亮的动画；又或是，加入一些更吸引眼球的动画效果。如此一来，添加动画效果可以使按钮产生的效果最大化。那么，接下来为你介绍这 20 个很棒的按钮代码，它们能使按钮更加丰富，且用户体验超好。</p>
+<h1 id="波浪形按钮"><a href="#波浪形按钮" class="headerlink" title="波浪形按钮"></a><a href="http://codepen.io/suez/pen/aOgMxy">波浪形按钮</a></h1><p><a href="http://codepen.io/suez/pen/aOgMxy"><br>  <img src="http://www.noupe.com/wp-content/uploads/2015/10/blobs-button.png"><br></a></p>
+<p><strong>作者</strong>：Nikolay Talanov</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2015/12/24/article-16/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/blog/2015/12/22/article-15/" itemprop="url">
+                  CSS 的使用中你可能不知道的 7 件事
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-22T15:50:56+08:00" content="2015-12-22">
+              2015-12-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/好文分享/" itemprop="url" rel="index">
+                    <span itemprop="name">好文分享</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2015/12/22/article-15/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/22/article-15/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/blog/2015/12/22/article-15/"class="leancloud_visitors"  data-flag-title="CSS 的使用中你可能不知道的 7 件事">
+                &nbsp; | &nbsp;
+                <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数</span>
+               <span class="leancloud-visitors-count"></span>
+            </span>
+        
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>无论你信不信，JavaScript 和 CSS 已经开始重叠，并为 CSS 增加了更多的功能。当我在写 <a href="https://davidwalsh.name/ways-css-javascript-interact">CSS 与 JavaScript 交互中你可能不知道的 5 种方式</a>的时候，读者对于 CSS 与 JavaScript 已经重叠的事感到很惊讶。那么今天，我会着重为你介绍 7 个可以通过 CSS 完成的任务 —— 不使用 JavaScript 或图像处理！</p>
+<h1 id="CSS-supports"><a href="#CSS-supports" class="headerlink" title="CSS @supports"></a><a href="https://davidwalsh.name/css-supports">CSS @supports</a></h1><p>每个优秀的前端工程师都会在使用某个特性前测试一下，确保是否在浏览器中可以使用。而这类测试通常是由 JavaScript 完成的，当然，也有很多人用 Modernizr（拥有很多很好功能的测试工具）来测试特性。那么现在有一个 CSS 新的 API 可以让你去做特性测试：<a href="https://davidwalsh.name/css-supports">@supports</a>，下面的例子将简单地教你如何使用：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* basic usage */</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">supports(prop:value)</span> </span>&#123;</span><br><span class="line">  <span class="comment">/* more styles */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* real usage */</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">supports</span> (display: flex) </span>&#123;</span><br><span class="line">  <span class="tag">div</span> <span class="rules">&#123; <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>; &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* testing prefixes too */</span></span><br><span class="line"><span class="at_rule">@<span class="keyword">supports</span> (display: -webkit-flex) or</span><br><span class="line">          (display: -moz-flex) or</span><br><span class="line">          (display: flex) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="tag">section</span> <span class="rules">&#123;</span><br><span class="line">      <span class="rule"><span class="attribute">display</span>:<span class="value"> -webkit-flex</span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">display</span>:<span class="value"> -moz-flex</span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">float</span>:<span class="value"> none</span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2015/12/22/article-15/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/blog/2015/12/15/article-14/" itemprop="url">
+                  使用 React 是业务需求，而不是技术需求
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-15T12:23:23+08:00" content="2015-12-15">
+              2015-12-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/好文分享/" itemprop="url" rel="index">
+                    <span itemprop="name">好文分享</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2015/12/15/article-14/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/15/article-14/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/blog/2015/12/15/article-14/"class="leancloud_visitors"  data-flag-title="使用 React 是业务需求，而不是技术需求">
+                &nbsp; | &nbsp;
+                <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数</span>
+               <span class="leancloud-visitors-count"></span>
+            </span>
+        
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>React 已经在开发者圈越来越流行了，并且有很多说明其技术优势的资源。然而，迁移（或是选择）一个新的框架最终归结为向所有人推销 —— 包括非开发者。这里会有一小部分工程经理或项目经理会因为它的新颖，而选择使用它来重构，更糟的是，很多团队被 JavaScript 的高生产工具搞得焦头烂额了，可悲的是向后移动项目是向前移动 web 的一部分。这篇文章并不是试图教你关于 React 的新东西，只是试着去总结以下，起点是为了向所有人说明 React 的疑惑，不仅是开发者。</p>
+<p><strong>总结</strong>：React 是一个为创建可组合的用户界面的库。同比其他类似的库如  Angular、Backbone、Knockout 和 Ember，React 的出现是为了解决业务问题而非技术的。接下来会为你解释 React 的重要性和对开发团队的益处。</p>
+<h1 id="降低风险"><a href="#降低风险" class="headerlink" title="降低风险"></a>降低风险</h1><p><strong>稳定性</strong> —— Facebook 花了很大的精力在 React 上（Newsfeed，Instagram，Messenger，Ads Marketplace 等），并且拥有专职的技术团队来维护这个项目。它的 dog-food 测试和投资都不是现有的任何一个项目能比的。除了 Facebook 内部的工程师，还有一大批 React 的爱好者。随着版本的更迭，目前在 github 上拥有 571 个贡献者（截止到 2015 年 12 月）。</p>
+<p><strong>正在使用 React</strong>：AirBnB，Asana，Atlassian，BBC，Chegg，CloudFlare，CNN.com，Codecademy，Coursera，Craftsy，Dailymotion，Dropbox，Expedia，Facebook，Feedly，Flipboard，HipChat，IMDb，Imgur，Instagram，Khan Academy，KISSmetrics，Mattermark，Minerva Project，Netflix，OkCupid，Rackspace，Rally Software，Ralph Lauren，Reddit，Redfin，Salesforce，Squarespace，The New York Times，Trunk Club，Twitter，Uber，University of Cincinnati，Venmo，WhatsApp，Wired，Wix，WordPress，Yahoo，Zendesk</p>
+<h1 id="开发效率"><a href="#开发效率" class="headerlink" title="开发效率"></a>开发效率</h1><p><strong>强大的路径迁移</strong> —— React 允许开发者可以根据自己的需求将其放到任何一个已经存在的页面上。值得注意的是，React 是需要加载一个运行时的库（React 0.14.0 的大小是 39.4 kb），因此零碎的迁移会导致页面重量的增加，直到旧版本的库被移除才会减少。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2015/12/15/article-14/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/blog/2015/12/07/article-13/" itemprop="url">
+                  ReactJS 的学习教程
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-07T09:48:17+08:00" content="2015-12-07">
+              2015-12-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/好文分享/" itemprop="url" rel="index">
+                    <span itemprop="name">好文分享</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2015/12/07/article-13/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/07/article-13/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/blog/2015/12/07/article-13/"class="leancloud_visitors"  data-flag-title="ReactJS 的学习教程">
+                &nbsp; | &nbsp;
+                <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数</span>
+               <span class="leancloud-visitors-count"></span>
+            </span>
+        
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><img src="http://www.logopearl.com/blog/wp-content/uploads/2015/12/reactjs-tutorials.jpg" /></p>
+<p>当提到为某个应用或网站构建 UI 时，ReactJS 往往是首先列出的最好的 JavaScript 库。首先它是开源的，并且已经在 Instagram 和 Facebook 上得到实践。还有一些著名的网站也使用 ReactJS 去构建他们的 UI，例如 Airbnb，Khan Academy，BBC，Netflix <a href="https://github.com/facebook/react/wiki/Sites-Using-React">等等</a>。</p>
+<p>如果你仍然在学习 ReactJS 的路上，并用它构建动态的用户界面，这里有一些教程能帮助你加速学习进程。</p>
+<p>下面列出的是一些开发者和作者所写的一部分教程，他们能帮你从新手提升到专家。</p>
+<h1 id="ReactJs-net-的教程"><a href="#ReactJs-net-的教程" class="headerlink" title="ReactJs.net 的教程"></a><a href="http://reactjs.net/getting-started/tutorial.html">ReactJs.net 的教程</a></h1><p><img src="http://www.logopearl.com/blog/wp-content/uploads/2015/12/1-reactjs-website.jpg" /></p>
+<p>这是众多版本的 React 教程之一。这个专门为设计师和开发者去“入门” React 和探索其功能而写的。本教程涵盖了利用 ReactJS 库去创建一个全新的 asp.net MVC 网站的完整流程，并且保证了学习的深入浅出。开始一个新项目的基本流程是，安装 React，构建 component，优化等等。</p>
+<h1 id="Ken-Wheeler-学习-ReactJS"><a href="#Ken-Wheeler-学习-ReactJS" class="headerlink" title="Ken Wheeler - 学习 ReactJS"></a><a href="https://scotch.io/tutorials/learning-react-getting-started-and-concepts">Ken Wheeler - 学习 ReactJS</a></h1><p><img src="http://www.logopearl.com/blog/wp-content/uploads/2015/12/2-scothio-reactjs.jpg" /></p>
+<p>这是 Ken Wheeler 在 Scotch.io 上发表的一篇很棒的教程。在去年发表的时候至今，已经有超过 200 条的分享，当然这些也只有在开发者社区圈里才会对此感兴趣。可以说这是目前找到的 ReactJS 最好的教程之一。此教程主要分为五个部分，从基础开始，涵盖了<strong>什么是 React</strong>，<strong>虚拟 DOM 是如何工作的</strong>，<strong>如何构建页面</strong>，<strong>生命周期的说明</strong>和 <strong>state</strong> 等。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2015/12/07/article-13/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/5/">5</a><a class="extend next" rel="next" href="/blog/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/blog/images/default_avatar.jpg"
+               alt="Jovey Zheng" />
+          <p class="site-author-name" itemprop="name">Jovey Zheng</p>
+          <p class="site-description motion-element" itemprop="description">Front End | Nodejs | React | Redux ...</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/blog/archives">
+              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/blog/categories">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/blog/tags">
+              <span class="site-state-item-count">47</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/blog/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/jovey-zheng" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/1633564683" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/profile.php?id=100010207239121" target="_blank">
+                  
+                    <i class="fa fa-facebook-square"></i> Facebook
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/9de90a2d9205/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-heartbeat"></i> JianShu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/blog/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-leaf"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jovey Zheng</span>
+</div>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/blog/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/blog/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/blog/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/blog/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/blog/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.0.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.0.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"joveyzheng"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script type="text/javascript">
+        var duoshuo_user_ID = 13537963;
+        var duoshuo_admin_nickname = "博主";
+      </script>
+      <script src="/blog/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/blog/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("KIpFhjbOqk9B6NsU6sEACyJt", "HOFTbHJmJyGsoGKssFSPrPAy");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+
+  
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/blog/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+
+</body>
+</html>
