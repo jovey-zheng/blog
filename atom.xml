@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://jovey-zheng.github.io/blog/"/>
-  <updated>2017-06-14T12:53:18.000Z</updated>
+  <updated>2017-07-04T10:50:16.000Z</updated>
   <id>http://jovey-zheng.github.io/blog/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客迁址啦</title>
+    <link href="http://jovey-zheng.github.io/blog/2017/07/04/article-21/"/>
+    <id>http://jovey-zheng.github.io/blog/2017/07/04/article-21/</id>
+    <published>2017-07-04T10:43:10.000Z</published>
+    <updated>2017-07-04T10:50:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>细心的小伙伴已经发现博客的地址已经用上了<code>域名</code>了，以后博客新的文章发布的位置会在 <a href="http://joveyzheng.com" target="_blank" rel="external"><code>joveyzheng.com</code></a>。</p>
+<p>子目录下的地址将在不久后关闭，届时将无法访问，所以小伙伴们快快转到新地址吧。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;细心的小伙伴已经发现博客的地址已经用上了&lt;code&gt;域名&lt;/code&gt;了，以后博客新的文章发布的位置会在 &lt;a href=&quot;http://joveyzheng.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;code&gt;joveyzheng.com&lt;
+    
+    </summary>
+    
+      <category term="杂谈" scheme="http://jovey-zheng.github.io/blog/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="blog" scheme="http://jovey-zheng.github.io/blog/tags/blog/"/>
+    
+      <category term="杂谈" scheme="http://jovey-zheng.github.io/blog/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>实用的 CSS — 贝塞尔曲线(cubic-bezier)</title>
@@ -1409,56 +1435,6 @@
       <category term="git" scheme="http://jovey-zheng.github.io/blog/tags/git/"/>
     
       <category term="加密" scheme="http://jovey-zheng.github.io/blog/tags/%E5%8A%A0%E5%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Git管理项目-起步</title>
-    <link href="http://jovey-zheng.github.io/blog/2015/09/07/article-1/"/>
-    <id>http://jovey-zheng.github.io/blog/2015/09/07/article-1/</id>
-    <published>2015-09-07T04:06:21.000Z</published>
-    <updated>2017-06-14T12:53:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="关于版本控制"><a href="#关于版本控制" class="headerlink" title="关于版本控制"></a>关于版本控制</h1><p>提到版本控制，那么我会想到的是SVN以及这里要说的Git。那什么是版本控制呢？版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。</p>
-<h1 id="Git基础-三种状态"><a href="#Git基础-三种状态" class="headerlink" title="Git基础-三种状态"></a>Git基础-三种状态</h1><p>Git 有三种状态，你的文件可能处于其中之一：已提交（committed）、已修改（modified）和已暂存（staged）。</p>
-<p><img src="/blog/images/article_img/1.png" alt="工作目录、暂存区域和Git仓库"></p>
-<p>Git 仓库目录是 Git 用来保存项目的元数据和对象数据库的地方。 这是 Git 中最重要的部分，从其它计算机克隆仓库时，拷贝的就是这里的数据。</p>
-<p>工作目录是对项目的某个版本独立提取出来的内容。 这些从 Git 仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改。</p>
-<p>暂存区域是一个文件，保存了下次将提交的文件列表信息，一般在 Git 仓库目录中。 有时候也被称作“索引”，不过一般说法还是叫暂存区域。<br><a id="more"></a></p>
-<p>基本的 Git 工作流程如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>在工作目录中修改文件。</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>暂存文件，将文件的快照放入暂存区域。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>提交更新，找到暂存区域的文件，将快照永久性存储到 Git 仓库目录。</span><br></pre></td></tr></table></figure></p>
-<p>如果 Git 目录中保存着的特定版本文件，就属于已提交状态。 如果作了修改并已放入暂存区域，就属于已暂存状态。 如果自上次取出后，作了修改但还没有放到暂存区域，就是已修改状态。</p>
-<h1 id="如何安装Git"><a href="#如何安装Git" class="headerlink" title="如何安装Git"></a>如何安装Git</h1><blockquote>
-<p><strong>Mac</strong>: brew install git</p>
-<p><strong>Linux(Debian)</strong> : apt-get install git-core</p>
-<p><strong>Linux(Fedora)</strong> : yum install git-core</p>
-<p><strong>Windows</strong> : 下载安装 <a href="http://git-scm.com" target="_blank" rel="external">Git</a></p>
-</blockquote>
-<p>配置<br><figure class="highlight smalltalk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="char">$ </span>git config --global user.name <span class="comment">"your name"</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.email</span> <span class="string">"youremail@email.com"</span></span><br></pre></td></tr></table></figure>
-<p>使用 <code>--global</code> 可以使该命令只执行一次。</p>
-<p>你可以通过如下的命令来查看你的配置信息：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br><span class="line"></span><br><span class="line">user.email=joveyzheng@qq<span class="class">.com</span></span><br><span class="line"></span><br><span class="line">user.name=joveyzheng</span><br><span class="line"></span><br><span class="line"><span class="attribute">color</span>.status=<span class="attribute">auto</span></span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
-<p>你可以通过输入 <code>$ git config &lt;key&gt;</code> 来查看某一项的配置<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config user<span class="class">.name</span></span><br><span class="line"></span><br><span class="line">joveyzheng</span><br></pre></td></tr></table></figure></p>
-<h1 id="获取帮助"><a href="#获取帮助" class="headerlink" title="获取帮助"></a>获取帮助</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">help</span></span><br></pre></td></tr></table></figure>
-<p>文中多处借鉴《Git pro》，想获得更多了解推荐阅读： <a href="http://git-scm.com/book/zh/v2" target="_blank" rel="external">Git Pro</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;关于版本控制&quot;&gt;&lt;a href=&quot;#关于版本控制&quot; class=&quot;headerlink&quot; title=&quot;关于版本控制&quot;&gt;&lt;/a&gt;关于版本控制&lt;/h1&gt;&lt;p&gt;提到版本控制，那么我会想到的是SVN以及这里要说的Git。那什么是版本控制呢？版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。&lt;/p&gt;
-&lt;h1 id=&quot;Git基础-三种状态&quot;&gt;&lt;a href=&quot;#Git基础-三种状态&quot; class=&quot;headerlink&quot; title=&quot;Git基础-三种状态&quot;&gt;&lt;/a&gt;Git基础-三种状态&lt;/h1&gt;&lt;p&gt;Git 有三种状态，你的文件可能处于其中之一：已提交（committed）、已修改（modified）和已暂存（staged）。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/images/article_img/1.png&quot; alt=&quot;工作目录、暂存区域和Git仓库&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Git 仓库目录是 Git 用来保存项目的元数据和对象数据库的地方。 这是 Git 中最重要的部分，从其它计算机克隆仓库时，拷贝的就是这里的数据。&lt;/p&gt;
-&lt;p&gt;工作目录是对项目的某个版本独立提取出来的内容。 这些从 Git 仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改。&lt;/p&gt;
-&lt;p&gt;暂存区域是一个文件，保存了下次将提交的文件列表信息，一般在 Git 仓库目录中。 有时候也被称作“索引”，不过一般说法还是叫暂存区域。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Git" scheme="http://jovey-zheng.github.io/blog/categories/Git/"/>
-    
-    
-      <category term="git" scheme="http://jovey-zheng.github.io/blog/tags/git/"/>
-    
-      <category term="项目管理" scheme="http://jovey-zheng.github.io/blog/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   

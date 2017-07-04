@@ -257,6 +257,137 @@
 
     
     
+      
+      
+
+      
+    
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/blog/2015/11/04/article-9/" itemprop="url">
+                  使用 Git 管理项目 - reset 与 rebase
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-11-04T17:49:09+08:00" content="2015-11-04">
+              2015-11-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2015/11/04/article-9/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/04/article-9/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/blog/2015/11/04/article-9/"class="leancloud_visitors"  data-flag-title="使用 Git 管理项目 - reset 与 rebase">
+                &nbsp; | &nbsp;
+                <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数</span>
+               <span class="leancloud-visitors-count"></span>
+            </span>
+        
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>在日常管理项目的过程中，可能会遇到提交的 commit/merge 并不是想要的，或是操作失误提交了，那么此时我们需要把不想要的 commit/merge 取消掉，如果做到呢？Git 为我们提供了一个 <code>reset</code> command，很好地解决了这个问题。</p>
+<h1 id="reset"><a href="#reset" class="headerlink" title="reset"></a>reset</h1><h2 id="1-命令说明"><a href="#1-命令说明" class="headerlink" title="1. 命令说明"></a>1. 命令说明</h2><figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset [--hard|soft|mixed|merge|keep] <span class="annotation">[&lt;commit&gt;|&lt;HEAD&gt;]</span></span><br></pre></td></tr></table></figure>
+<p>常用的是<code>[--hard|soft|mixed]</code>，本文主要使用<code>--hard</code>作为例子进行说明。</p>
+<h2 id="2-本地仓库"><a href="#2-本地仓库" class="headerlink" title="2. 本地仓库"></a>2. 本地仓库</h2><p>在本地仓库执行 <code>$ git reset --hard HEAD^</code> 可以将本地的仓库回滚到上一次提交时的状态，<code>HEAD^</code>指的是上一次提交。</p>
+<p>同时你也可以执行 <code>$ git reset --hard fc232ae</code> 将其回滚到 <code>fc232ae</code> commit 时的状态。</p>
+<h2 id="3-远程仓库"><a href="#3-远程仓库" class="headerlink" title="3. 远程仓库"></a>3. 远程仓库</h2><p>以上操作只会对本地仓库造成影响，而远程仓库的源码和 commit 信息并不会因此改变。那么此时我们需要另外一个 command 来改变远程仓库的状态。</p>
+<p><strong>注意，此时不要在上一步的操作之后执行<code>$ git pull</code> ，因为这个操作会使本地仓库的状态与远程同步。</strong><br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">push </span>origin [<span class="keyword">branch] </span>-f</span><br></pre></td></tr></table></figure></p>
+<p>执行此命令后，Git 会将远程仓库的状态与本地仓库的保持一致，即回滚状态。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2015/11/04/article-9/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -666,148 +797,12 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/blog/2015/09/17/article-5/" itemprop="url">
-                  NPM一些常用命令
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-09-17T15:57:11+08:00" content="2015-09-17">
-              2015-09-17
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/blog/categories/开发日常/" itemprop="url" rel="index">
-                    <span itemprop="name">开发日常</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/blog/2015/09/17/article-5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/17/article-5/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/blog/2015/09/17/article-5/"class="leancloud_visitors"  data-flag-title="NPM一些常用命令">
-                &nbsp; | &nbsp;
-                <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数</span>
-               <span class="leancloud-visitors-count"></span>
-            </span>
-        
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="关于NPM"><a href="#关于NPM" class="headerlink" title="关于NPM"></a>关于NPM</h1><p>NPM的全称是Node Package Manager，是一个NodeJS包管理和分发工具，已经成为了非官方的发布Node模块（包）的标准。<br>就目前而言，NPM的官网<a href="https://www.npmjs.com/">[1]</a>拥有18万的packages。国内的镜像是淘宝所提供的CNPM<a href="http://npm.taobao.org/">[2]</a>，与NPM相同，它会每隔10分钟就同步一次。</p>
-<h1 id="一些常用命令"><a href="#一些常用命令" class="headerlink" title="一些常用命令"></a>一些常用命令</h1><ul>
-<li><code>npm -v</code>: 查看npm安装的版本</li>
-<li><code>npm init</code>: 引导你创建一个package.json文件，包括名称、版本、作者这些信息等</li>
-<li><code>npm install &lt;modulename&gt;</code>: 安装模块</li>
-<li><code>npm install &lt;modulename&gt; -g</code>: 安装全局模块</li>
-<li><code>npm install &lt;modulename&gt;@1.0.0</code>: 安装指定版本的模块</li>
-<li><p><code>npm install &lt;modulename&gt; -save</code>: 安装模块并添加到package.json依赖中</p>
-</li>
-<li><p><code>npm uninstall &lt;modulename&gt;</code>: 卸载模块</p>
-</li>
-<li><p><code>npm cache clean</code>: 清除缓存</p>
-</li>
-<li><p><code>npm help</code>: 查看帮助命令</p>
-</li>
-<li><code>npm ls</code>: 查看当前目录安装的依赖</li>
-<li><code>npm ls -g</code>: 查看全局目录安装的依赖</li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/blog/2015/09/17/article-5/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/blog/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/blog/page/5/">5</a><a class="extend next" rel="next" href="/blog/page/5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/blog/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/blog/page/5/">5</a><a class="page-number" href="/blog/page/6/">6</a><a class="extend next" rel="next" href="/blog/page/5/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -848,7 +843,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -862,7 +857,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/blog/tags">
-              <span class="site-state-item-count">47</span>
+              <span class="site-state-item-count">48</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
